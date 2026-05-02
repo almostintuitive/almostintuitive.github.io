@@ -1,6 +1,6 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL: https://itchingpixels.com/
+baseURL: https://almostintuitive.com/
 title: Mark Aron Szulyovszky
 theme: book
 languageCode: en-US
@@ -12,6 +12,6 @@ params:
   # You can also specify this parameter per page in front matter.
   BookToC: false
 
-  BookRepo: https://github.com/itchingpixels/itchingpixels.github.io
+  BookRepo: https://github.com/almostintuitive/almostintuitive.github.io
   BookDateFormat: "2006 Jan 2"
   BookComments: false
