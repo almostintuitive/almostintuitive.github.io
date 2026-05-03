@@ -3,6 +3,8 @@ title:  "Re-imagining Github/Gitlab Actions"
 date:   2026-05-02
 ---
 
+# Re-imagining Github/Gitlab Actions
+
 As with most of you, our small team’s velocity has increased a lot over the last 6 months.
 There is a “reimagining git(hub)” zeitgeist going on, and “actions” are a big part of that in terms of time and money spent for every productive team. They’re even more important now, right?
 
