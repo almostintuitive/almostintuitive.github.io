@@ -33,7 +33,9 @@ stateDiagram
   BehaviouralSciences --> Designer
   ProfessionalOnlinePokerPlayer --> Designer
   ProfessionalOnlinePokerPlayer --> ProbabilisticThinking
+  ProfessionalOnlinePokerPlayer --> QuantFinance
   ProbabilisticThinking --> CoFoundingDrops
+  ProbabilisticThinking --> QuantFinance
   CoFoundingDrops --> SoftwareEngineering
   Designer --> SoftwareEngineering
   Designer --> London
@@ -43,15 +45,15 @@ stateDiagram
   HackingThroughoutMyTeenageYears --> SoftwareEngineering
   ProbabilisticThinking --> SoftwareEngineering
   SoftwareEngineering --> CTO
-  CTO --> Exit
   CTO --> QuantFinance
   CTO --> Unravel
   CTO --> Aperiodic
+  CoFoundingDrops --> Exit
+  Exit --> QuantFinance
   Exit --> Unravel
   Exit --> Aperiodic
   QuantFinance --> Unravel
   QuantFinance --> Aperiodic
-  CTO --> [*]
 {{< /mermaid >}}
 
 _(Ok, I hope you didn't expect a graph, and I surprised you!)_
