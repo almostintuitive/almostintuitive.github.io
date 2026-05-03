@@ -26,9 +26,8 @@ But fine, let me show you this graph approximately describing my life / career s
 
 stateDiagram
   [*] --> HackingThroughoutMyTeenageYears
-  HackingThroughoutMyTeenageYears --> SoundEngineering
-  SoundEngineering --> University
-  SoundEngineering --> ProfessionalOnlinePokerPlayer
+  HackingThroughoutMyTeenageYears --> University
+  HackingThroughoutMyTeenageYears --> ProfessionalOnlinePokerPlayer
   University --> Designer
   University --> BehaviouralSciences
   BehaviouralSciences --> University
@@ -38,14 +37,22 @@ stateDiagram
   ProbabilisticThinking --> CoFoundingDrops
   CoFoundingDrops --> SoftwareEngineering
   Designer --> SoftwareEngineering
-  Designer --> MovingToLondon
-  MovingToLondon --> SoftwareEngineering
+  Designer --> London
+  London --> SoftwareEngineering
   Designer --> CoFoundingDrops
-  CoFoundingDrops --> MovingToLondon
+  CoFoundingDrops --> London
   HackingThroughoutMyTeenageYears --> SoftwareEngineering
   ProbabilisticThinking --> SoftwareEngineering
-  SoftwareEngineering --> CTOofDrops
-  CTOofDrops --> [*]
+  SoftwareEngineering --> CTO
+  CTO --> Exit
+  CTO --> QuantFinance
+  CTO --> Unravel
+  CTO --> Aperiodic
+  Exit --> Unravel
+  Exit --> Aperiodic
+  QuantFinance --> Unravel
+  QuantFinance --> Aperiodic
+  CTO --> [*]
 {{< /mermaid >}}
 
 _(Ok, I hope you didn't expect a graph, and I surprised you!)_
