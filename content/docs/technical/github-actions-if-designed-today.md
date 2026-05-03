@@ -1,5 +1,5 @@
 ---
-title:  "Re-imagining Github/Gitlab Actions"
+title:  "What GitHub Actions Would Look Like If Designed Today"
 date:   2026-05-02
 ---
 
