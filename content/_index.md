@@ -60,6 +60,8 @@ stateDiagram
   Exit --> Aperiodic
   QuantFinance --> Unravel
   QuantFinance --> Aperiodic
+  Unravel --> [*]
+  Aperiodic --> [*]
 {{< /mermaid >}}
 
 _(Ok, I hope you didn't expect a graph, and I surprised you!)_
