@@ -29,6 +29,7 @@ stateDiagram
   state "Co-founding Drops" as CoFoundingDrops
   state "Software engineering" as SoftwareEngineering
   state "Quant finance" as QuantFinance
+  state "Unravel / Aperiodic" as UnravelAperiodic
 
   [*] --> HackingThroughoutMyTeenageYears
   HackingThroughoutMyTeenageYears --> University
@@ -52,16 +53,12 @@ stateDiagram
   ProbabilisticThinking --> SoftwareEngineering
   SoftwareEngineering --> CTO
   CTO --> QuantFinance
-  CTO --> Unravel
-  CTO --> Aperiodic
+  CTO --> UnravelAperiodic
   CoFoundingDrops --> Exit
   Exit --> QuantFinance
-  Exit --> Unravel
-  Exit --> Aperiodic
-  QuantFinance --> Unravel
-  QuantFinance --> Aperiodic
-  Unravel --> [*]
-  Aperiodic --> [*]
+  Exit --> UnravelAperiodic
+  QuantFinance --> UnravelAperiodic
+  UnravelAperiodic --> [*]
 {{< /mermaid >}}
 
 _(Ok, I hope you didn't expect a graph, and I surprised you!)_
