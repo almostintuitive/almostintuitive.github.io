@@ -22,6 +22,14 @@ But fine, let me show you this graph approximately describing my life / career s
 {{< mermaid >}}
 
 stateDiagram
+  state "Hacking throughout my teenage years" as HackingThroughoutMyTeenageYears
+  state "Professional online poker player" as ProfessionalOnlinePokerPlayer
+  state "Behavioural sciences" as BehaviouralSciences
+  state "Probabilistic thinking" as ProbabilisticThinking
+  state "Co-founding Drops" as CoFoundingDrops
+  state "Software engineering" as SoftwareEngineering
+  state "Quant finance" as QuantFinance
+
   [*] --> HackingThroughoutMyTeenageYears
   HackingThroughoutMyTeenageYears --> University
   HackingThroughoutMyTeenageYears --> ProfessionalOnlinePokerPlayer
