@@ -65,11 +65,9 @@ _(Ok, I hope you didn't expect a graph, and I surprised you!)_
 
 I have a more formal intro I'll copy over from my Linkedin. I know it's a horrible place, but in my field, there's no other option. I mostly post on quant finance related content, no AI slop, but some promotion of our data products: [Add me there](https://www.linkedin.com/in/almostintuitive/)
 
-*I'm a quant portfolio manager / researcher / engineer (ex-CTO, ex-poker pro) / exited entrepreneur. But unlike what the previous sentence, I consider myself actually low-key & humble.
+*I'm a quant portfolio manager / researcher / engineer (ex-CTO, ex-poker pro) / exited entrepreneur. But unlike what the previous sentence, I consider myself actually low-key & humble.*
+*With [Unravel](https://unravel.finance), we've built on a unique research & portfolio construction platform that to uncover & trade cross-sectional alpha factors in crypto - from oder book derived data to fundamentals.*
 
-With Unravel, we've built on a unique research & portfolio construction platform that to uncover & trade cross-sectional alpha factors in crypto - from oder book derived data to fundamentals.
-
-Previously, I co-founded Drops, the language learning app, where most of the time, I wore the CTO then CRO / data hat.
-We sold it to Kahoot! in 2020, after bootstrapping the company to 25 million users.
-
+*Previously, I co-founded Drops, the language learning app, where most of the time, I wore the CTO then CRO / data hat.
+We sold it to Kahoot in 2020, after bootstrapping the company to 25 million users.
 I developed and designed complex infrastructure, silly games and I have had the fortune to work with great people. If you ask me, functional programming should be considered a competitive advantage.*
