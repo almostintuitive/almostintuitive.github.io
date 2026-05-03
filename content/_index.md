@@ -23,37 +23,36 @@ But fine, let me show you this graph approximately describing my life / career s
 
 {{< mermaid >}}
 
-stateDiagram
-  [*] --> HackingThroughoutMyTeenageYears
-  HackingThroughoutMyTeenageYears --> University
-  HackingThroughoutMyTeenageYears --> ProfessionalOnlinePokerPlayer
-  University --> Designer
-  University --> BehaviouralSciences
-  BehaviouralSciences --> University
-  BehaviouralSciences --> Designer
-  ProfessionalOnlinePokerPlayer --> Designer
-  ProfessionalOnlinePokerPlayer --> ProbabilisticThinking
-  ProfessionalOnlinePokerPlayer --> QuantFinance
-  ProbabilisticThinking --> CoFoundingDrops
-  ProbabilisticThinking --> QuantFinance
-  CoFoundingDrops --> SoftwareEngineering
-  Designer --> SoftwareEngineering
-  Designer --> London
-  London --> SoftwareEngineering
-  Designer --> CoFoundingDrops
-  CoFoundingDrops --> London
-  HackingThroughoutMyTeenageYears --> SoftwareEngineering
-  ProbabilisticThinking --> SoftwareEngineering
-  SoftwareEngineering --> CTO
-  CTO --> QuantFinance
-  CTO --> Unravel
-  CTO --> Aperiodic
-  CoFoundingDrops --> Exit
-  Exit --> QuantFinance
-  Exit --> Unravel
-  Exit --> Aperiodic
-  QuantFinance --> Unravel
-  QuantFinance --> Aperiodic
+flowchart TD
+  teenage["Hacking throughout my teenage years"] --> university["University"]
+  teenage --> poker["Professional online poker player"]
+  teenage --> engineering["Software engineering"]
+  university --> designer["Designer"]
+  university --> behavioural["Behavioural sciences"]
+  behavioural --> university
+  behavioural --> designer
+  poker --> designer
+  poker --> probabilistic["Probabilistic thinking"]
+  poker --> quant["Quant finance"]
+  probabilistic --> drops["Co-founding Drops"]
+  probabilistic --> quant
+  probabilistic --> engineering
+  designer --> engineering
+  designer --> london["London"]
+  designer --> drops
+  london --> engineering
+  drops --> engineering
+  drops --> london
+  drops --> exit["Exit"]
+  engineering --> cto["CTO"]
+  cto --> quant
+  cto --> unravel["Unravel"]
+  cto --> aperiodic["Aperiodic"]
+  exit --> quant
+  exit --> unravel
+  exit --> aperiodic
+  quant --> unravel
+  quant --> aperiodic
 {{< /mermaid >}}
 
 _(Ok, I hope you didn't expect a graph, and I surprised you!)_
