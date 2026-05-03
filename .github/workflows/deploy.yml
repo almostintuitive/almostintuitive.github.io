@@ -4,29 +4,53 @@ on:
   push:
     branches:
       - source
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.68.3'
           extended: true
 
       - name: Build
-        run: hugo --minify
+        env:
+          HUGO_ENVIRONMENT: production
+        run: hugo --gc --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: master 
-          cname: almostintuitive.com
-          publish_dir: ./public
+          path: ./public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
