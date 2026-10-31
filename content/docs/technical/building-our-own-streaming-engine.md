@@ -6,7 +6,7 @@ date: 2026-10-31
 # As a data engineer, I’m in a state of disbelief
 
 
-*We run a real-time data platform. After years of struggle we wrote our own streaming engine, surprise: with LLMs. We actually have two implementations, one in Rust and one in Go, and extensive parity tests between the two.
+*We run a [real-time data platform](https://aperiodic.io). After years of struggle we wrote our own streaming engine, surprise: with LLMs. We actually have two implementations, one in Rust and one in Go, and extensive parity tests between the two.
 TLDR? Try creating bespoke implementations of databases, query engines, data pipelines from scratch, you may end up being surprised.*
 
 For the last 9 months, we could go into depths that would felt impossible before.
