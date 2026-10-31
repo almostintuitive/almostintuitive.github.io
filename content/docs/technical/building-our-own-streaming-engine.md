@@ -9,8 +9,8 @@ date: 2026-10-31
 *We run a real-time data platform. After years of struggle we wrote our own streaming engine, surprise: with LLMs. We actually have two implementations, one in Rust and one in Go, and extensive parity tests between the two.
 TLDR? Try creating bespoke implementations of databases, query engines, data pipelines from scratch, you may end up being surprised.*
 
-For the last 9 months, I could go into depths that would felt impossible before.
-We have a real-time data platform where ingest >1 million messages per second, we rebuild the order book from individual updates and we calculate useful metrics. We process high cardinality time series, and calculate hundreds of useful metrics, scaling out horizontally, with redundancy.
+For the last 9 months, we could go into depths that would felt impossible before.
+We have a real-time data platform where ingest >1 million messages per second, we rebuild the order book from individual updates and we calculate useful and sometimes unique metrics. We process high cardinality time series, scaling out horizontally, with redundancy.
 
 As you can imagine, “Just use postgres” doesn’t apply to us. We’ve spent years evaluating message brokers / streaming engines for latency, throughput, fault tolerance in a wide range of scenarios.
 We have “harnesses” (excuse me, my vocab is not completely distorted by AI) that allows us to test new implementations for the individual angles we test for and all of them at the same time.
@@ -20,10 +20,10 @@ There’s this aura around “streaming engines” that’s they’re impossible
 It always seemed like “these guys have spent a decade doing this, surely they’ve thought about everything”. We read their commits, listened to their podcast interviews, interacted with them.
 
 Probably that’s true. But as we found out, we can now engineer performant code with LLMs tailored for exactly our use case that outperforms “stock” open source (yes, including QuestDB and kdb+) by a wide margin.
-1 week later, we were in production.
-We could resolve the edge cases we never thought we’d be able to resolve: we could add after-failure recovery behavior that we never thought anyone would cater for. We got to be 5x more efficient in cpu terms, and close to 10x reduction in memory.
+3 days later, it was on staging, in 2 weeks, it was in production.
+We could resolve the edge cases we never thought we’d be able to resolve: we could add failure recovery behavior that we never thought anyone would cater for. We got to be 5x more efficient in cpu terms, and close to 10x reduction in memory.
 We’re fully in control over the latency/throughput tradeoff.
-We can extend the sql dialect with built-in functions that speed up the calculations of certain, unusual metrics by 100x.
+We can extend the sql dialect with built-in functions that speed up the calculations of certain, unusual metrics very typical to our domain by 100x.
 
 It wasn’t a single prompt, and there’s no secret sauce. We know exactly what our success criteria are and a lot about the edge cases (we’ve bumped into many) are.
 We use software engineering best practices, and a very extensive unit/integration/e2e test suite with performance regression tests running on every commit.
