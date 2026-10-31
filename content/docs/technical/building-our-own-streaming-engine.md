@@ -9,7 +9,6 @@ date: 2026-10-31
 *We run a real-time data platform. After years of struggle we wrote our own streaming engine, surprise: with LLMs. We actually have two implementations, one in Rust and one in Go, and extensive parity tests between the two.
 TLDR? Try creating bespoke implementations of databases, query engines, data pipelines from scratch, you may end up being surprised.*
 
-Disclaimer: I’m a data engineer / quant, been in software engineering for the last 15 years.
 For the last 9 months, I could go into depths that would felt impossible before.
 We have a real-time data platform where ingest >1 million messages per second, we rebuild the order book from individual updates and we calculate useful metrics. We process high cardinality time series, and calculate hundreds of useful metrics, scaling out horizontally, with redundancy.
 
