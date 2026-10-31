@@ -1,9 +1,9 @@
 ---
-title: "Writing your own streaming engine is only a bad idea until it isn’t"
+title: "Is writing your own streaming engine a bad idea?"
 date: 2026-10-31
 ---
 
-# Writing your own streaming engine is only a bad idea until it isn’t
+# Is writing your own streaming engine a bad idea?
 
 
 *We run a [real-time data platform](https://aperiodic.io). After years of struggle we wrote our own streaming engine, surprise: with LLMs. We actually have two implementations, one in Rust and one in Go, and extensive parity tests between the two.
