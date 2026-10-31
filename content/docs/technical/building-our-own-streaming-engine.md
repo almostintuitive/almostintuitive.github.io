@@ -1,9 +1,9 @@
 ---
-title: "As a data engineer, I’m in a state of disbelief"
+title: "Writing your own streaming engine is only a bad idea until it isn’t"
 date: 2026-10-31
 ---
 
-# As a data engineer, I’m in a state of disbelief
+# Writing your own streaming engine is only a bad idea until it isn’t
 
 
 *We run a [real-time data platform](https://aperiodic.io). After years of struggle we wrote our own streaming engine, surprise: with LLMs. We actually have two implementations, one in Rust and one in Go, and extensive parity tests between the two.
